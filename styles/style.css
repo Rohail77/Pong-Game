@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-black: #2e2e2e;
+  --dark-black: #212121;
+  --gray: #c4c4c4;
+  --white: #ffffff;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mukta Mahee', sans-serif;
+  color: white;
+  min-height: 100vh;
+  background-color: var(--light-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 2em 0;
+}
+
+.headings {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.headings h1 {
+  font-weight: 400;
+}
+
+#timer {
+  margin-left: 0.5em;
+}
+
+#start-game-btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 2em;
+  color: white;
+  background-color: var(--dark-black);
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+#canvas {
+  margin: 3em auto;
+  background-color: var(--dark-black);
+  display: block;
+}
+
+/***********************
+  Style The Controller
+************************/
+
+.controller {
+  margin: 0 auto;
+  width: max-content;
+  text-align: center;
+}
+
+.player {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.player1 {
+  margin-bottom: 0.5em;
+}
+
+.player2 {
+  margin-top: 0.5em;
+}
+
+.keyboard-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard-btn {
+  font-weight: 700;
+  font-size: 1.8rem;
+  background-color: var(--dark-black);
+  border-radius: 0.4em;
+  width: 38px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard-btn + .keyboard-btn {
+  margin-left: 0.4em;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 0 3.2em;
+  }
+
+  .ctas {
+    grid-column: 2;
+  }
+
+  #canvas {
+    grid-row: 2 / 4;
+    grid-column: 2;
+    margin: 0;
+  }
+
+  .controller {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  .controller-p1 {
+    align-self: flex-start;
+  }
+
+  .controller-p2 {
+    align-self: flex-end;
+  }
+}
