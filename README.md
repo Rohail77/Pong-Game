@@ -1,7 +1,7 @@
 # Pong-Game
 ## About the App
 
-A Pong Game built using HTML5's Canvas API. The app can be previewed on [this link](https://social-media-dashboard-page.vercel.app/).
+A Pong Game built using HTML5's Canvas API. The app can be previewed on [this link](https://pong-game-rohail.vercel.app/).
 
 ## Tools Used
 
@@ -17,4 +17,4 @@ on medium by [Nicky Dover](https://medium.com/@dovern42) explaining how to handl
 
 ## Hosting
 
-The app is hosted on **Vercel** and can be previewed on [this link](https://social-media-dashboard-page.vercel.app/). 
+The app is hosted on **Vercel** and can be previewed on [this link](https://pong-game-rohail.vercel.app/). 
